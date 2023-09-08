@@ -1,4 +1,5 @@
-﻿int numN = int.Parse(Console.ReadLine() ?? "0");
+﻿Console.WriteLine("Введите число");
+int numN = int.Parse(Console.ReadLine() ?? "0");
 int evNumN = (-1) * numN;
 
 while (evNumN < numN)
