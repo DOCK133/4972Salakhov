@@ -8,6 +8,6 @@ int ran = new System.Random().Next(100, 1000);
 System.Console.WriteLine(ran);
 //Показываем число в терминале
 char[] digitChar = ran.ToString().ToCharArray();
-//<создаем массив><вкладываем число и превращаем в массив><превращаем строку в массив char>
+//<создаем массив><вкладываем число и превращаем в массив>
 System.Console.Write(digitChar[1]);
 //показываем вторую цифру в терминале

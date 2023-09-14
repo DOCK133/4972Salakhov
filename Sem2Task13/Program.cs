@@ -3,3 +3,19 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
+Console.WriteLine("Введите число");
+int num = int.Parse(Console.ReadLine() ?? "0");
+//Переводим текст в числовое значение
+if 
+{
+    char[] digitChar = num.ToString().ToCharArray();
+//<создаем массив><вкладываем число и превращаем в массив><превращаем строку в массив char>
+    System.Console.Write(digitChar[2]);
+    //выводим третье число
+    Console.WriteLine("Третья цифра числа: " + num + " это: " + digitChar);
+}
+else
+{
+    Console.WriteLine("Число не трёхзначное");
+    //Если число не трехзначное
+}

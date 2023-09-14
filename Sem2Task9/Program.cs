@@ -43,7 +43,7 @@ void Variant3()
 
     char[] digitChar = number.ToString().ToCharArray();
     Console.WriteLine((int)digitChar[0] > digitChar[1] ? digitChar[0] : digitChar[1]);
-    //<условие>?<впариант1>:<вариант2>
+    //<условие>?<вариант1>:<вариант2>
 
 }
 
