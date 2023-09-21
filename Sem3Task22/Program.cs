@@ -6,7 +6,7 @@
 // // 3) PrintResult
 
 
-//// МЕТОД 1
+// // МЕТОД 1
 // int ReadData(string msg)
 // {
 //     Console.WriteLine(msg);
@@ -28,9 +28,9 @@
 // }
 // int num = ReadData("Введите число");
 // PrintResult(BuildLine(num, 1));
-// PrintResult(BuildLine(num, 2));
+// PrintResult(BuildLine(num, 3));
 
-//// МЕТОД 2
+// //// МЕТОД 2
 
 void Prompt(string message)
 {
