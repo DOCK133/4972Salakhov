@@ -25,7 +25,6 @@ BigInteger Factorial(int num)
 
 int num = ReadData("Введите число: ");
 BigInteger res = Factorial(num);
-
 PrintResult("Произведение чисел от 1 до " + num + " Равна " + Factorial(num));
 // Печатаем результат
 void PrintResult(string msg)
