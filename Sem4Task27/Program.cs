@@ -18,18 +18,18 @@ int SumDigith(int num)
     while (num > 0)
     {
         res = res + num % 10;
-        num = num % 10;
+        num = num / 10;
     }
     return res;
-}
-
-// Печатаем результат
-void PrintResult(string msg)
-{
-    Console.WriteLine(msg);
 }
 
 int num = ReadData("Введите число: ");
 int res = SumDigith(num);
 
 PrintResult("Сумма цифр в числе " + num + " Равна " + SumDigith(num));
+
+// Печатаем результат
+void PrintResult(string msg)
+{
+    Console.WriteLine(msg);
+}
