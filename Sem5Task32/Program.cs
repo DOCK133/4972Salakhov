@@ -33,3 +33,8 @@ void InversArr(int[] arr)
         arr[i] = arr[i] * -1;
     }
 }
+
+int[] arr = GenArr(12, -9, 9);
+PrintArr(arr);
+InversArr(arr);
+PrintArr(arr);
