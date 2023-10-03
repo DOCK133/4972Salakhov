@@ -5,11 +5,11 @@
 // (со звездочкой) Отсортировать массив методом пузырька
 
 // Генерируем массив случайными цифрами
-int[] GenArr(int num, int lowBorder, int highBorder)
+int[] GenArr(int length, int lowBorder, int highBorder)
 {
-    int[] arr = new int[num];
+    int[] arr = new int[length];
     Random rnd = new Random();
-    for (int i = 0; i < num; i++)
+    for (int i = 0; i < length; i++)
     {
         arr[i] = new Random().Next(lowBorder, highBorder + 1);
     }
@@ -48,11 +48,30 @@ int CountEvn(int[] arr)
 
 }
 
+// // Пузырьковая сортировка
+// void BubbleSort(int[] arr)
+// {
+//     int n = arr.Length;
+//     for (int i = 0; i < n - 1; i++)
+//         for (int j = 0; j < n - i - 1; j++)
+//             if (arr[j] > arr[j + 1])
+//             {
+//                 // Меняем местами элемены
+//                 int temp = arr[j];
+//                 arr[j] = arr[j + 1];
+//                 arr[j + 1] = temp;
+//             }
+// }
+
+
 // Вызываем генерацию массива 
 int[] arr = GenArr(12, 100, 999);
 // Выводим изначальный массив
-PrintArr(arr);
+PrintArr("Исходный массив: " + arr);
 // Считаем количество чисел
 int count = CountEvn(arr);
 // Печатаем результат
 PrintResult("количество чётных чисел в массиве " + count);
+// //Сортируем массив пузырьком
+// BubbleSort(arr);
+// PrintArr("отсортированный массив: " + arr);
