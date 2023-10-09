@@ -28,6 +28,8 @@
 
 // Console.WriteLine($"Число {number} в степени {stepen} = {Exponentiation(number, stepen)}");
 
+
+
 int ReadData(string msg) // вводим данные
 {
     Console.WriteLine(msg);
