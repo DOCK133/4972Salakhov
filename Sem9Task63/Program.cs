@@ -31,5 +31,5 @@ void GenLineRec(int num)
     }
 }
 
-int num = ReadData("Введите число N : ");
+int num = ReadData("Введите число N: ");
 GenLineRec(num);
