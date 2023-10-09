@@ -45,3 +45,74 @@ int len = 4;
 int[,] table = new int[len, len];
 FillArraySpiral(table, len);
 PrintArray(table);
+
+// //Антон
+
+// // Создаем спиральный массив
+// int[,] GenerateSpiralArray(int n)
+// {
+//     int[,] spiral = new int[n, n];
+//     int num = 1;
+//     int rowStart = 0;
+//     int rowEnd = n - 1;
+//     int colStart = 0;
+//     int colEnd = n - 1;
+
+//     while (num <= n * n)
+//     {
+//         for (int i = colStart; i <= colEnd; i++)
+//         {
+//             spiral[rowStart, i] = num++;
+//         }
+//         rowStart++;
+
+//         for (int i = rowStart; i <= rowEnd; i++)
+//         {
+//             spiral[i, colEnd] = num++;
+//         }
+//         colEnd--;
+
+//         for (int i = colEnd; i >= colStart; i--)
+//         {
+//             spiral[rowEnd, i] = num++;
+//         }
+//         rowEnd--;
+
+//         for (int i = rowEnd; i >= rowStart; i--)
+//         {
+//             spiral[i, colStart] = num++;
+//         }
+//         colStart++;
+//     }
+
+//     return spiral;
+// }
+
+// // Рекурсивный метод
+// int[,] FillSpiral(int[,] matrix, int startNumber = 1, int count = 1)
+// {
+//     for (int j = -1 + count; j < matrix.GetLength(1) + 1 - count; j++)
+//     {
+//         matrix[-1 + count, j] = startNumber++;
+//     }
+//     for (int i = count; i < matrix.GetLength(0) + 1 - count; i++)
+//     {
+//         matrix[i, matrix.GetLength(1) - count] = startNumber++;
+//     }
+//     for (int j = matrix.GetLength(1) - 1 - count; j > -1 + count; j--)
+//     {
+//         matrix[matrix.GetLength(0) - count, j] = startNumber++;
+//     }
+//     for (int i = matrix.GetLength(0) - count; i > -1 + count; i--)
+//     {
+//         matrix[i, -1 + count] = startNumber++;
+//     }
+//     if (startNumber <= matrix.GetLength(0) * matrix.GetLength(1))
+//     {
+//         FillSpiral(matrix, startNumber, ++count);
+//     }
+//     return matrix;
+// }
+
+// int[,] array0 = FillSpiral(new int[m, n]);
+// Output2DArray(array0, "Массив: ");
